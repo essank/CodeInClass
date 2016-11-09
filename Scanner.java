@@ -4,14 +4,14 @@ public class Example
 {
    public static void main (String[] args)
    {
-      Scanner scan = new Scanner(System.in);
+      Scanner in = new Scanner(System.in);
       
       String name;
       
-      System.println("what is your name: ");
+      System.out.println("what is your name: ");
       
-      name = in.nextLine;
+      name = in.nextLine();
       
-      System.out.println("Hello" + name);
+      System.out.println("Hello " + name);
    }
 }
