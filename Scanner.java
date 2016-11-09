@@ -12,6 +12,12 @@ public class Example
       
       name = in.nextLine();
       
-      System.out.println("Hello " + name);
+      int age;
+      
+      System.out.println("what is your age: ");
+      
+      age = in.nextInt();
+      
+      System.out.println("Hello " + name + " 10 years younger " + (age - 10));
    }
 }
