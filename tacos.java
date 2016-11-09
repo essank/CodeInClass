@@ -25,8 +25,6 @@ public class Example
       System.out.print("What is the tax? ");
       tax = in.nextInt();
       
-      //System.out.print("What is the subtotal? ");
-      //subTotal = in.nextInt();
       
       subTotal = tacos * .99;
       total = (tacos * .99) + subTotal;
