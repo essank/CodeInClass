@@ -5,19 +5,17 @@ public class Courses
    private int secNum;
    private int seats;
    private int studentsNum;
-
-    // no-argument constractor
-    public Courses()
+   
+   public Courses()
    {
-      course = "";
+      course = "Maths";
       courseNum = 0;
       secNum = 0;
       seats = 0;
       studentsNum = 0;
    }
-
-    //argument constractor
-    public Courses(String C,int CN,int SN,int S,int STN)
+   
+   public Courses(String C,int CN,int SN,int S,int STN)
    {
       course = C;
       courseNum = CN;
@@ -25,9 +23,8 @@ public class Courses
       seats = S;
       studentsNum = STN;
    }
-
-    //setters
-    public void setCourse(String C)
+   
+   public void setCourse(String C)
    {
       course = C;
    }
@@ -50,10 +47,10 @@ public class Courses
    public void setStudentsNum(int STN)
    {
      studentsNum = STN;
-   }
-
-    //getters
-    public String getCourse()
+   } 
+   
+   
+   public String getCourse()
    {
       return course;
    }
@@ -78,13 +75,15 @@ public class Courses
       return studentsNum;
    }
    
-   public int addStudent()
+   public void addStudent()
    {
-      return studentsNum+1;
+     studentsNum = studentsNum+1;
+     seats=seats-1;
    }
    
-   public int removeStudent()
+   public void removeStudent()
    {
-      return studentsNum-1;
-   } 
+       studentsNum = studentsNum-1;
+       
+   }
 }
