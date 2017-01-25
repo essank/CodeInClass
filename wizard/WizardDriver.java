@@ -1,3 +1,5 @@
+package wizard;
+
 public class WizardDriver
 {
    public static void main (String[] args)

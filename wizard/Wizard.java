@@ -1,3 +1,5 @@
+package wizard;
+
 public class Wizard
 {
    private String name;
